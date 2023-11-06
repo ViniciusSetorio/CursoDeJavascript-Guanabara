@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Primeiros passos com o DOM </title>
+
+  <style>
+    body{
+      background: rgb(199, 2, 146);
+      color: aliceblue;
+      font: normal 20pt arial;
+    }
+  </style>
+
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+
+    <script>
+      var corpo = window.document.body
+      var segundo_p = window.document.getElementsByTagName('p')[1]
+      //segundo_p.style.color = 'red'
+      //corpo.style.background = 'blue'
+      //window.document.write('Está escrito assim: ' + segundo_p.innerText)
+
+      //window.document.write(segundo_p.innerText + '</br>') // escreve o primeiro_p sem formatação
+      //window.document.write(segundo_p.innerHTML + '</br>') // escreve o segundo p com formatação
+      
+      /*
+      var id1 = window.document.getElementById('msg')
+      id1.style.color = 'blue'
+      id1.innerText = 'Mudei o bagui...'
+      */
+
+      var id1 = window.document.querySelector('div.msg')
+      id1.style.color = 'blue'
+      
+    </script>
+
+</body>
+</html>

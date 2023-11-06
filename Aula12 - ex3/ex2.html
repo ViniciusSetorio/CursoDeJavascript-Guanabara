@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Idade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+
+  <section>
+    <div>
+      <p>Ano de Nascimento: 
+        <input type="number" name="txtano" id="txtano" min="0"> <!-- caixa para números -->
+      </p>
+      <p>Sexo:
+        <input type="radio" name="radsex" id="mas" checked> <!-- bolinha para marcar -->
+        <label for="msc">Masculino</label>
+
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+      </p>
+      <p>
+        <input type="button" value="Verificar" onclick="verificar()"> <!-- Botão para executar função -->
+      </p>
+
+    </div>
+
+    <div id="res">
+      preencha os dados acima para ver o resultado!
+      <img id="foto" src="" alt="Aqui teremos uma foto">
+    </div>
+  </section>
+
+  <footer>&copy;ViciniusSite</footer>
+  <script src="script.js"></script>
+</body>
+</html>
